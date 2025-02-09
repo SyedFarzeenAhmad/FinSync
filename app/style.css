@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: green;
     text-align: center;
 }
 
-div {
+#main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,15 +17,37 @@ div {
     margin: 200px 500px 50px 500px;
 }
 
-div a {
+#expenseBlock {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100px;
     color: white;
-    text-decoration: none;
+    background-color: lightblue;
+    border-radius: 3px;
     font-size: 18px;
     margin: 0 15px;
 }
 
-div a:hover {
-    text-decoration: underline;
+#expenseBlock:hover{
+    background-color: red;
+}
+
+#analysisBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    color: white;
+    background-color: lightblue;
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+#analysisBlock:hover{
+    background-color: red;
 }
 
 #reset-btn {
