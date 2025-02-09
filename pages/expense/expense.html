@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Personal Budget Tracker</h2>
+
+        <h3>Balance: <span id="balance">0</span> <span id="currency-symbol">₹</span></h3>
+
+        <label for="currency">Select Currency:</label>
+        <select id="currency">
+            <option value="INR">INR (₹)</option>
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+
+        <div class="form">
+            <input type="text" id="desc" placeholder="Enter description" required>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="Food">🍔 Food</option>
+                <option value="Transport">🚗 Transport</option>
+                <option value="Shopping">🛍️ Shopping</option>
+                <option value="Bills">💡 Bills</option>
+                <option value="Other">🔹 Other</option>
+            </select>
+
+            <button onclick="addTransaction(1)">💰 Credit</button>
+            <button onclick="addTransaction(-1)">💸 Debit</button>
+        </div>
+
+        <h3>Transaction History</h3>
+        <ul id="history"></ul>
+
+        <h3>Expense Breakdown</h3>
+        <ul id="category-summary"></ul>
+
+        <button onclick="window.location.href='../../app/index.html'">🔙 Back to Tracker</button>
+    </div>
+
+    <script src="expense.js"></script>
+</body>
+</html>

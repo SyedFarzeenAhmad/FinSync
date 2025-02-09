@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/sack-dollar-solid.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>FinSync</title>
+</head>
+<body>
+    <nav>
+        <a href="../pages/expense/expense.html">Expense Tab</a>
+        <a href="../pages/analysis/analysis.html">Analysis</a>
+    </nav>
+    
+    <button onclick="resetDatabase()">Reset Data</button>
+    
+    <script>
+        function resetDatabase() {
+            if (confirm("Are you sure you want to reset all data? This action cannot be undone.")) {
+                indexedDB.deleteDatabase("BudgetDB");
+                localStorage.clear();
+                alert("All data has been reset.");
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>
