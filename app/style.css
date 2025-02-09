@@ -6,19 +6,25 @@ body {
     text-align: center;
 }
 
-nav {
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #007bff;
+    border-radius: 10px;
+    height: 300px;
     padding: 15px;
+    margin: 200px 500px 50px 500px;
 }
 
-nav a {
+div a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
 }
 
-nav a:hover {
+div a:hover {
     text-decoration: underline;
 }
 

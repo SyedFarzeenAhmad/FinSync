@@ -1,6 +1,6 @@
 let db;
 let balance = 0;
-const API_KEY = "945af12da05a26aab7dde2a3"; // Replace with your API key
+const API_KEY = "945af12da05a26aab7dde2a3";
 const BASE_CURRENCY = "INR";
 let currentCurrency = BASE_CURRENCY;
 let exchangeRates = {};
